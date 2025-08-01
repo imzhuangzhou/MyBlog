@@ -5,12 +5,11 @@ const TAG_SLUGS = {
   Tech: "tech",
   Music: "music",
   Book: "book",
-  Food: "food",
   Diary: "diary",
-  Boyaki: "boyaki",
-  Link: "link",
-  ProductDev: "product-dev",
-  Org: "org",
+  LLM: "llm",
+  Agent: "agent",
+  PM: "pm",
+  VibeCoding: "vibe-coding",
 } as const;
 
 export type TagSlug = ValueOf<typeof TAG_SLUGS>;
@@ -23,49 +22,44 @@ type TagData = {
 
 const TAG_DATA: Record<TagSlug, TagData> = {
   [TAG_SLUGS.Tech]: {
-    name: "技術",
+    name: "技术",
     emoji: "💻",
     slug: TAG_SLUGS.Tech,
   },
   [TAG_SLUGS.Music]: {
-    name: "音楽",
+    name: "音乐",
     emoji: "🎵",
     slug: TAG_SLUGS.Music,
   },
   [TAG_SLUGS.Book]: {
-    name: "本",
+    name: "书籍",
     emoji: "📚",
     slug: TAG_SLUGS.Book,
   },
-  [TAG_SLUGS.Food]: {
-    name: "食",
-    emoji: "🍙",
-    slug: TAG_SLUGS.Food,
-  },
   [TAG_SLUGS.Diary]: {
-    name: "日記",
+    name: "日记",
     emoji: "📝",
     slug: TAG_SLUGS.Diary,
   },
-  [TAG_SLUGS.Boyaki]: {
-    name: "ぼやき",
-    emoji: "💭",
-    slug: TAG_SLUGS.Boyaki,
+  [TAG_SLUGS.LLM]: {
+    name: "LLM",
+    emoji: "🤖",
+    slug: TAG_SLUGS.LLM,
   },
-  [TAG_SLUGS.Link]: {
-    name: "外部リンク",
-    emoji: "🔗",
-    slug: TAG_SLUGS.Link,
+  [TAG_SLUGS.Agent]: {
+    name: "Agent",
+    emoji: "🎯",
+    slug: TAG_SLUGS.Agent,
   },
-  [TAG_SLUGS.ProductDev]: {
-    name: "プロダクト開発",
-    emoji: "🛠",
-    slug: TAG_SLUGS.ProductDev,
+  [TAG_SLUGS.PM]: {
+    name: "PM",
+    emoji: "📊",
+    slug: TAG_SLUGS.PM,
   },
-  [TAG_SLUGS.Org]: {
-    name: "組織",
-    emoji: "🌱",
-    slug: TAG_SLUGS.Org,
+  [TAG_SLUGS.VibeCoding]: {
+    name: "Vibe Coding",
+    emoji: "✨",
+    slug: TAG_SLUGS.VibeCoding,
   },
   [TAG_SLUGS.All]: {
     name: "All",
