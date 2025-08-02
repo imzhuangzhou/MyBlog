@@ -22,22 +22,22 @@ type TagData = {
 
 const TAG_DATA: Record<TagSlug, TagData> = {
   [TAG_SLUGS.Tech]: {
-    name: "技术",
+    name: "Tech",
     emoji: "💻",
     slug: TAG_SLUGS.Tech,
   },
   [TAG_SLUGS.Music]: {
-    name: "音乐",
+    name: "Music",
     emoji: "🎵",
     slug: TAG_SLUGS.Music,
   },
   [TAG_SLUGS.Book]: {
-    name: "书籍",
+    name: "Book",
     emoji: "📚",
     slug: TAG_SLUGS.Book,
   },
   [TAG_SLUGS.Diary]: {
-    name: "日记",
+    name: "Diary",
     emoji: "📝",
     slug: TAG_SLUGS.Diary,
   },

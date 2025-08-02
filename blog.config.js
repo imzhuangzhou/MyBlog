@@ -4,13 +4,13 @@
 const BLOG = {
   title: "ZhuangZhou's Blog",
   author: "ZhuangZhou",
-  email: "imjingzhang@hotmail.com",
+  email: "imjingzhang@qq.com",
   link: "https://jingzhang.site",
   externalLink: "", // make redirect link to /link page
   repository: "https://github.com/imzhangzhou/zhuangzhou",
   description:
     "莫鉴于流水，而鉴于止水",
-  lang: "zh-CN", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
+  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: "light", // ['light', 'dark'],
   font: "sans-serif", // ['sans-serif', 'serif']
   lightBackground: "#ffffff", // use hex value, don't forget '#' e.g #fffefc
@@ -42,7 +42,8 @@ const BLOG = {
       measurementId: "G-DVHDLRZY2F", // e.g: G-XXXXXXXXXX
     },
   },
-  isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables),
+  showProfile: true, // 控制是否显示 Profile 区域
 };
 // export default BLOG
 module.exports = BLOG;
