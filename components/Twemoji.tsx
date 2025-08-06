@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const TWEMOJI_CDN_BASE_URL = "https://cdn.jsdelivr.net/npm/@twemoji/svg";
+const TWEMOJI_CDN_BASE_URL = "https://fastly.jsdelivr.net/npm/@twemoji/svg";
 
 type Props = {
   emoji: string;

@@ -7,7 +7,13 @@ const nextConfig = {
   swcMinify: true,
   reactStrictMode: true,
   images: {
-    domains: ["gravatar.com", "pbs.twimg.com", "twemoji.maxcdn.com"],
+    domains: [
+      "gravatar.com", 
+      "pbs.twimg.com", 
+      "twemoji.maxcdn.com",
+      "fastly.jsdelivr.net",
+      "gstatic.loli.net"
+    ],
   },
   async headers() {
     return [
